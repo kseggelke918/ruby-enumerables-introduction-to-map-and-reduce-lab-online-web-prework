@@ -34,11 +34,6 @@ end
 
 def reduce_to_total(source_array)
   i = 0 
-  while i < source_array.length do
-    new_element = source_array[i]
-    i += 1 
-  end
-  total = new_element + total 
-  return total 
+  source_array.inject(0) {|sum, i| sum + 1}
 end 
 
