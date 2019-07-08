@@ -33,7 +33,8 @@ def map_to_square(source_array)
 end
 
 def reduce_to_total(source_array)
-  total = source_array.inject(0) 
+  i = 0 
+  total = source_array.inject[i] 
   return total 
 end 
 
