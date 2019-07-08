@@ -34,5 +34,6 @@ end
 
 def reduce_to_total(source_array)
   total = source_array.inject(0) 
+  return total 
 end 
 
