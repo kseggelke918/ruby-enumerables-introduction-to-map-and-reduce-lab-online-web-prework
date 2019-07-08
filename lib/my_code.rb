@@ -35,7 +35,7 @@ end
 def reduce_to_total(source_array)
   i = 0 
   while i < source_array.length do 
-    total = source_array.inject(0) {|sum, i| sum + 1}
+    total = source_array.inject(0) {|sum, i| sum + i}
     i += 1 
   end 
   return total 
