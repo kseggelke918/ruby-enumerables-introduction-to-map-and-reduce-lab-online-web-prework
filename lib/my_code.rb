@@ -41,8 +41,24 @@ def reduce_to_total(source_array, starting_point = 0)
   return total 
 end 
 
+def reduce_to_all_true(source_array)
+  i = 0 
+  while i < source_array.length do 
+    if array[i] == FALSE
+      return false
+    end 
+    i += 1 
+  end 
+  true 
+end 
 
 
+describe "reduce_to_all_true returns true when all values are truthy" do
+    it "reduces correctly" do
+      source_array = [1, 2, true, "razmatazz"]
+      expect(reduce_to_all_true(source_array)).to be_truthy
+    end
+  end
 
 
 
